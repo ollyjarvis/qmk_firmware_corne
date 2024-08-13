@@ -16,14 +16,16 @@
 #################################################################################################################
 
 # Configure to use the Elite-C bootloader instead of the default pro micro
-# BOOTLOADER = atmel-dfu
+BOOTLOADER = atmel-dfu
+
+DYNAMIC_MACRO_ENABLE = yes
 
 # Enable LEDs.
-RGB_MATRIX_ENABLE       = yes
+RGB_MATRIX_ENABLE = yes
 
 # OLED
 OLED_ENABLE = yes
 OLED_DRIVER = ssd1306
 
 # Reduce compiled size.
-LTO_ENABLE  = yes
+LTO_ENABLE = yes

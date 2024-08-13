@@ -49,11 +49,11 @@
 #    define RGB_MATRIX_KEYPRESSES
 #    define RGB_MATRIX_KEYRELEASES
 
-// Light up pressed key momentarily.
-#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
-
 // Simple solid colour lighting.
 #    define ENABLE_RGB_MATRIX_SOLID_COLOR
+#    define ENABLE_RGB_MATRIX_BREATHING
+#    define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+#    define ENABLE_RGB_MATRIX_CYCLE_PINWHEEL
 
 #endif // RGB_MATRIX_ENABLE
 
