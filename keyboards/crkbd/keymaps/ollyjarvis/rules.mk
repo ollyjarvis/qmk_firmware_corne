@@ -24,8 +24,8 @@ BOOTLOADER = caterina
 # RGB_MATRIX_ENABLE = yes
 
 # OLED
-# OLED_ENABLE = yes
-# OLED_DRIVER = ssd1306
+OLED_ENABLE = yes
+OLED_DRIVER = ssd1306
 
 # Reduce compiled size.
 LTO_ENABLE = yes
