@@ -29,13 +29,13 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 
     [TYPING_0] = LAYOUT_split_3x6_3(
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-    RGB_TOG, KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,     KC_J,    KC_L,    KC_U,    KC_Y,    KC_LBRC, KC_RBRC,
+    KC_NO,   KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,     KC_J,    KC_L,    KC_U,    KC_Y,    KC_NO,   KC_NO,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-    KC_TAB,  LALT_T(KC_A),LGUI_T(KC_R),LCTL_T(KC_S),LSFT_T(KC_T),KC_G,KC_M,RSFT_T(KC_N),RCTL_T(KC_E),RGUI_T(KC_I),RALT_T(KC_O),KC_SCLN,
+    KC_TAB,  KC_A,LGUI_T(KC_R),LCTL_T(KC_S),LSFT_T(KC_T),KC_G,KC_M,RSFT_T(KC_N),RCTL_T(KC_E),RGUI_T(KC_I),KC_O,KC_SCLN,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
     KC_NUBS, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,     KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-                         KC_NO, LT(T1,KC_ESC), KC_SPC, KC_BSPC,  LT(T2,KC_ENT), KC_RGHT
+                         KC_NO,   LT(T1,KC_ESC), KC_SPC,   KC_BSPC, LT(T2,KC_ENT), KC_RGHT
 //                      +--------+--------------+--------++--------+--------------+--------+
     ),
 
@@ -47,7 +47,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
     KC_NO,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_NO,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,    KC_NO,   KC_LEFT,    KC_DOWN,    KC_UP,   KC_RGHT,   KC_NO,
+    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,    KC_NO,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
@@ -63,9 +63,9 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,  KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-    KC_NO,   KC_PIPE, KC_NUHS, KC_PSLS, KC_LCBR, KC_LBRC,  KC_RBRC, KC_RCBR, KC_BSLS, KC_MINS, KC_PLUS, KC_NO,
+    KC_NO,   KC_PIPE, KC_NUHS, KC_PSLS, KC_LCBR, KC_LBRC,  KC_RBRC, KC_RCBR, KC_BSLS, KC_MINS, KC_PLUS, KC_TRNS,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
-    KC_NO,   RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW,KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_UNDS, KC_EQL,  KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_LPRN, KC_NO,    KC_NO,   KC_RPRN, KC_NO,   KC_UNDS, KC_EQL,  KC_NO,
 // +--------+--------+--------+--------+--------+--------++--------+--------+--------+--------+--------+--------+
                                KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS
 //                            +--------+--------+--------++--------+--------+--------+
