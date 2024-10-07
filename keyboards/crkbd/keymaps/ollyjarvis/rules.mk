@@ -21,7 +21,7 @@ BOOTLOADER = caterina
 # DYNAMIC_MACRO_ENABLE = yes
 
 # Enable LEDs.
-# RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_ENABLE = yes
 
 # OLED
 OLED_ENABLE = yes
